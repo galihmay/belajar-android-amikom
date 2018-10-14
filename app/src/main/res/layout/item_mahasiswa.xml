@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/nama_lengkap"/>
+        <TextView
+            android:layout_width="0dp"
+            android:text="@string/titik_dua"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+        <TextView
+            android:id="@+id/tvNamaLengkap"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/nim"/>
+        <TextView
+            android:layout_width="0dp"
+            android:text="@string/titik_dua"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+        <TextView
+            android:id="@+id/tvNIM"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/jurusan"/>
+        <TextView
+            android:layout_width="0dp"
+            android:text="@string/titik_dua"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+        <TextView
+            android:id="@+id/tvJurusan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/alamatlengkap" />
+        <TextView
+            android:layout_width="0dp"
+            android:text="@string/titik_dua"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+        <TextView
+            android:id="@+id/tvAlamatLengkap"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+    <View
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary">
+
+    </View>
+</LinearLayout>

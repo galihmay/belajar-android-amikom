@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AddUserActivity">
+
+    <EditText
+        android:singleLine="true"
+        android:hint="@string/nama_lengkap"
+        android:id="@+id/etNamaLengkap"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:singleLine="true"
+        android:hint="@string/nim"
+        android:id="@+id/etNIM"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:singleLine="true"
+        android:hint="@string/jurusan"
+        android:id="@+id/etJurusan"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:singleLine="true"
+        android:hint="@string/alamatlengkap"
+        android:id="@+id/etAlamatLengkap"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btMasukan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/masukan"/>
+
+</LinearLayout>
