@@ -30,6 +30,12 @@
     <string name="titik_dua">:</string>
     <string name="add_user">Add User</string>
     <string name="list_user">List User</string>
+    <string name="MainActivity_bilangan_genap_dan_ganjil">Bilangan Genap dan Ganjil</string>
+    <string name="genap_atau_ganjil">Masukan Angka apakah bilangan genap atau ganjil</string>
+    <string name="tentukan">Tentukan</string>
+    <string name="masukan_angka">Masukan Angka</string>
+    <string name="Output">Output</string>
+    <string name="lsitview">Listview</string>
 
 
 </resources>

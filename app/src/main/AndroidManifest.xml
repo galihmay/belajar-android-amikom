@@ -32,9 +32,9 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".activity.AddUserActivity" />
-        <activity android:name=".activity.DetailActivity">
-
-        </activity>
+        <activity android:name=".activity.DetailActivity" />
+        <activity android:name=".BilanganGenapdanGanjil" />
+        <activity android:name=".ListViewPlace"></activity>
     </application>
 
 </manifest>
