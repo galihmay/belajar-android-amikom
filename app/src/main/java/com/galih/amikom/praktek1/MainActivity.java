@@ -85,10 +85,4 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
-    public void Listview(View view) {
-        Intent intent = new Intent(MainActivity.this, ListViewPlace.class);
-        startActivity(intent);
-    }
 }

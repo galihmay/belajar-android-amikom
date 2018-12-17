@@ -1,16 +1,26 @@
 package com.galih.amikom.praktek1;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
 
-public class BilanganGenapdanGanjil extends AppCompatActivity {
-    TextView im ;
-    TextView pros ;
-    Button pro ;
+import java.util.ArrayList;
+import java.util.List;
 
+import static com.galih.amikom.praktek1.R.id.editText2;
+
+
+public class BilanganGenapdanGanjil extends AppCompatActivity {
+    private Button btnPros;
+    int n;
+    private EditText input, output;
+    private ListView LV;
+    private List<String> listData = new ArrayList<>();
 
 
     @Override
@@ -18,30 +28,38 @@ public class BilanganGenapdanGanjil extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().setTitle("Bilangan Genap dan Ganjil");
         setContentView(R.layout.activity_bilangan_genap_dan_ganjil);
-        pro = (Button)findViewById(R.id.button1);
-        im =(TextView)findViewById(R.id.editText1);
-        pros =(TextView)findViewById(R.id.editText2);
+        findID();
+        initListener();
+        initListView();
+    }
 
-        pro.setOnClickListener(new View.OnClickListener() {
+    private void findID() {
+        btnPros = (Button) findViewById(R.id.button_Ok);
+        input = (EditText) findViewById(R.id.eT_input);
+        output = (EditText) findViewById(editText2);
+    }
 
+    private void initListener() {
+        btnPros.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View arg0) {
-                // TODO Auto-generated method stub
-
-                int n1 = Integer.parseInt(im.getText().toString()) ;
-                for (int i = 0; i <=n1; i++) {
-
-                    if(i % 2==0){
-                        pros.setText("genap ");
-                    }else{
-                        pros.setText("ganjil");
+            public void onClick(View view) {
+                n = Integer.parseInt(input.getText().toString());
+                for (int i = 0; i <= n; i++) {
+                    if (i % 2 == 0) {
+                        listData.add(i + ": Bilangan Genap");
+                        output.setText(n + " Bilangan Genap");
+                    } else {
+                        listData.add(i + ": Bilangan  Ganjil");
+                        output.setText(n + " Bilangan  Ganjil");
                     }
                 }
-                im.setText(null);
             }
-
-
         });
+    }
 
+    private void initListView() {
+        LV = (ListView) findViewById(R.id.mLv);
+        final ArrayAdapter<String> LvAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, listData);
+        LV.setAdapter(LvAdapter);
     }
 }
